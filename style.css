@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('img/pohon2.jpg') no-repeat center center/cover  ;
+    
+}
+
+.container {
+    text-align: center;
+    background: rgba(58, 58, 58, 0.15); /* Warna transparan */
+    padding: 30px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Efek blur kaya kaca */
+    -webkit-backdrop-filter: blur(10px); /* Support buat Safari */
+    min-width: 350px;
+}
+
+.profile {
+    margin-bottom: 15px;
+}
+.photo-slider img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.849);
+    transition: transform 0.3s ease;
+}
+
+.photo-slider img:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.849);
+    font-style: italic;
+}
+
+.desc {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.923);
+    opacity: 0.9;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.music-player audio {
+    width: 250px;
+    margin-top: 15px;
+}
